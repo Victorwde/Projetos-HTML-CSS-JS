@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VENDAS DE PIZZAS</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <ul>
+            <li><h1>COMUNIDADE BOA ESPERANÇA</h1></li>
+            <li><h2>VENDAS DE PIZZAS</h2></li>
+        </ul>
+    </header>
+    <section>
+        <form>
+            <h3>SELECIONE A PIZZA QUE FOI VENDIDA</h3>
+            <ul>
+                <li><input type="radio" id="mussarela" name="pizzas"><label for="mussarela">MUSSARELA</label></li>
+                <li><input type="radio" id="mista" name="pizzas"><label for="mista">MISTA</label></li>
+                <li><input type="radio" id="calabresa" name="pizzas"><label for="calabresa">CALABRESA</label></li>
+            </ul>
+        </form>
+    </section>
+    <section>
+        <button id="vendas">VENDAS</button><button id="estorno">ESTORNO</button>
+    </section>
+    <section id="table">
+        <table>
+            <tr>
+                <th>SABORES</th><th>QUANTIDADE</th><th>VALORES</th>
+
+            </tr>
+            <tr>
+                <td>MUSSARELA</td><td id="resultadoMussarela"></td><td id="vendasMussarela"></td>
+            </tr>
+            <tr>
+                <td>MISTA</td><td id="resultadoMista"></td><td id="vendasMista"></td>
+            </tr>
+            <tr>
+                <td>CALABRESA</td><td id="resultadoCalabresa"></td><td id="vendasCalabresa"></td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <button id="export">PLANILHAS</button>
+    </section>
+    <script src="tableToExcel.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>
